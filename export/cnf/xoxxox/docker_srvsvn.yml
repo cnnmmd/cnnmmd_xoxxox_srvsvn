@@ -1,0 +1,13 @@
+networks:
+  default:
+    name: xoxxox_netmid
+    external: true
+services:
+  xoxxox_srvsvn:
+    image: xoxxox/envsvn:001
+    container_name: xoxxox_srvsvn
+    volumes:
+      - ../../../import/cnnmmd_xoxxox_srvsvn/srvsvn/etc_bind:/etc/bind
+      - ../../../import/cnnmmd_xoxxox_srvsvn/srvsvn/var_log_bind:/var/log/bind
+      - ../../../import/cnnmmd_xoxxox_srvsvn/srvsvn/var_cache_bind:/var/cache/bind
+    command: "named -g"
