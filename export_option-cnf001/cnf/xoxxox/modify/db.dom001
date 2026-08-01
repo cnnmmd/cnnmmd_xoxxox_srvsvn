@@ -1,0 +1,14 @@
+$TTL 300
+@ IN SOA ns1.dom001. admin.dom001. (
+  2026071201 ; serial
+  300 ; refresh
+  120 ; retry
+  604800 ; expire
+  300 ; ttl
+)
+@ IN NS ns1.dom001.
+@ IN MX 10 mx1.dom001.
+ns1 IN A 192.168.100.10
+mx1 IN A 192.168.100.20
+ms1 IN A 192.168.100.20
+www IN A 192.168.100.30

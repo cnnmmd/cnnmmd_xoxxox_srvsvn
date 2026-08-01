@@ -1,0 +1,4 @@
+zone "dom001" {
+  type master;
+  file "/etc/bind/db.dom001";
+};
